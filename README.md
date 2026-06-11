@@ -7,15 +7,25 @@ Designed with a focus on smooth UI, theme switching, animations, and fun gamepla
 👉 https://fahmidhaabdulhakeem-dev.github.io/X-O-CLASH/
 
 ✨ Features
+
 🎯 Classic 3×3 Tic Tac Toe gameplay
+
 🎨 Multiple visual themes (Ninja / Warrior / Cyber)
+
 ⚡ Smooth animations & UI transitions
+
 🏆 Winner detection with result popup
+
 🤝 Draw detection system
+
 🔁 Restart / Play Again option
+
 🎉 Confetti celebration on winning
+
 📱 Fully responsive design (mobile + desktop)
+
 🧠 Clean and beginner-friendly JavaScript logic
+
 🎭 Themes
 
 Choose your battlefield style:
