@@ -31,17 +31,23 @@ Designed with a focus on smooth UI, theme switching, animations, and fun gamepla
 Choose your battlefield style:
 
 🥷 Ninja Mode – Dark, stealth-inspired aesthetic
+
 ⚔️ Warrior Mode – Bold, battle-themed visuals
+
 🤖 Cyber Mode – Neon futuristic UI
 
 Each theme changes the board design, colors, and vibe dynamically.
 
 🛠️ Tech Stack
+
 🧱 HTML5 – Structure
+
 🎨 CSS3 – Styling & animations
+
 ⚙️ JavaScript – Game logic & interactions
 
 🎯 Game Rules
+
 Player X always starts first
 Players take turns marking empty cells
 First to get 3 in a row wins
