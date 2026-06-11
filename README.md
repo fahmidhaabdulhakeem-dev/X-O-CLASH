@@ -49,9 +49,13 @@ Each theme changes the board design, colors, and vibe dynamically.
 🎯 Game Rules
 
 Player X always starts first
+
 Players take turns marking empty cells
+
 First to get 3 in a row wins
+
 If all cells are filled → Draw
+
 🏆 Highlights
 
 This project focuses on:
