@@ -61,8 +61,11 @@ If all cells are filled → Draw
 This project focuses on:
 
 Clean UI/UX design
+
 Interactive animations
+
 Theme-based visual transformation
+
 Smooth gameplay experience
 
 👩‍💻 Developer
