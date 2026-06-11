@@ -1,0 +1,147 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+color:white;
+transition:0.5s;
+overflow:hidden;
+}
+
+/* TITLE */
+.title{
+font-size:3rem;
+margin-bottom:10px;
+background:linear-gradient(90deg,#00f5ff,#ff00ff,#00ff99);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{filter:drop-shadow(0 0 10px cyan);}
+to{filter:drop-shadow(0 0 25px magenta);}
+}
+
+/* THEME BUTTONS */
+.theme-box button{
+margin:5px;
+padding:8px 14px;
+border:none;
+border-radius:20px;
+cursor:pointer;
+font-weight:bold;
+}
+
+/* STATUS */
+#status{
+margin:10px;
+font-size:1.2rem;
+}
+
+/* BOARD */
+.board{
+display:grid;
+grid-template-columns:repeat(3,110px);
+gap:12px;
+padding:20px;
+border-radius:20px;
+backdrop-filter:blur(15px);
+background:rgba(255,255,255,0.08);
+}
+
+.cell{
+height:110px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:2.5rem;
+cursor:pointer;
+border-radius:15px;
+background:rgba(255,255,255,0.1);
+transition:0.3s;
+}
+
+.cell:hover{
+transform:scale(1.08);
+box-shadow:0 0 15px cyan;
+}
+
+.x{color:#00f5ff;}
+.o{color:#ff00ff;}
+
+/* BUTTON */
+#restart{
+margin-top:20px;
+padding:10px 25px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+background:linear-gradient(90deg,#00f5ff,#ff00ff);
+color:white;
+font-weight:bold;
+}
+
+/* ===== THEMES ===== */
+
+body.cyber{background:linear-gradient(135deg,#001018,#001f3f,#000);}
+body.ninja{background:radial-gradient(circle,#0a0a0a,#000);}
+body.warrior{background:linear-gradient(135deg,#2b0000,#000,#3b0a0a);}
+
+/* ===== WIN OVERLAY ===== */
+.overlay{
+position:fixed;
+top:0;left:0;
+width:100%;height:100%;
+background:rgba(0,0,0,0.75);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:1000;
+}
+
+.hidden{display:none;}
+
+.winBox{
+padding:30px 50px;
+border-radius:20px;
+text-align:center;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+box-shadow:0 0 30px cyan;
+}
+
+.winBox h2{
+font-size:2.5rem;
+margin-bottom:15px;
+text-shadow:0 0 15px gold;
+}
+
+.winBox button{
+padding:10px 20px;
+border:none;
+border-radius:20px;
+cursor:pointer;
+background:linear-gradient(90deg,#00f5ff,#ff00ff);
+color:white;
+font-weight:bold;
+}
+
+/* CONFETTI */
+#confetti{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:999;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>X-O CLASH</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="cyber">
+
+<h1 class="title">X-O CLASH</h1>
+
+<div class="theme-box">
+  <button onclick="setTheme('ninja')">🥷 Ninja</button>
+  <button onclick="setTheme('warrior')">⚔️ Warrior</button>
+  <button onclick="setTheme('cyber')">🤖 Cyber</button>
+</div>
+
+<div id="status">Player X Turn</div>
+
+<div class="board">
+  <div class="cell" data-index="0"></div>
+  <div class="cell" data-index="1"></div>
+  <div class="cell" data-index="2"></div>
+  <div class="cell" data-index="3"></div>
+  <div class="cell" data-index="4"></div>
+  <div class="cell" data-index="5"></div>
+  <div class="cell" data-index="6"></div>
+  <div class="cell" data-index="7"></div>
+  <div class="cell" data-index="8"></div>
+</div>
+
+<button id="restart">Restart</button>
+
+<!-- WIN OVERLAY -->
+<div id="winOverlay" class="overlay hidden">
+  <div class="winBox">
+    <h2 id="winText">WINNER</h2>
+    <button onclick="closeWin()">Play Again</button>
+  </div>
+</div>
+
+<canvas id="confetti"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
